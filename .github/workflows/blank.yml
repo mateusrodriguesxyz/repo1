@@ -3,7 +3,10 @@ name: Copy sample.json to repo2
 on:
   push:
     branches: [ main ]
-
+    paths:
+      - sample.json
+  workflow_dispatch:
+  
 jobs:
   copy:
     runs-on: ubuntu-latest
